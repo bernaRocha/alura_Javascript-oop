@@ -1,11 +1,12 @@
 export class ContaCorrente {
   agencia;
   cliente;
+
   _saldo = 0
 
   sacar(valor){  
     if(this._saldo >= valor){   
-      this.saldo -= valor
+      this._saldo -= valor
       return valor;
     }
   }
